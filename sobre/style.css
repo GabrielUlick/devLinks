@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: white;
+  --bg-url: url(./../assets/bg-mobile.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color: rgba(255, 255, 255, 0.2);
+  --switch-bg-url: url(./../assets/moon-stars.svg);
+}
+
+.light {
+  --text-color: black;
+  --bg-url: url(./../assets/bg-mobile-light.jpg);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color: rgba(0, 0, 0, 0.1);
+  --switch-bg-url: url(./../assets/sun.svg);
+}
+
+body {
+  background-image: var(--bg-url);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  /*background: color image repeat position/size */
+  /* height: 100vh; */
+}
+
+body * {
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+#back-button {
+  height: 30px;
+  width: 30px;
+  margin-left: 25px;
+  margin-top: 5px;
+}
+
+/* container */
+
+#container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  width: 100%;
+  margin: auto auto;
+  padding: 0 80px;
+}
+
+/* right-content */
+
+#content-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+  margin: auto auto;
+  padding: 0 80px;
+}
+
+#technology-img {
+  display: flex; /* Define o elemento como um flex container */
+  align-items: center;
+  justify-content: center; /* Centraliza o conteúdo verticalmente e horizontalmente */
+  height: 150px; /* Defina a altura desejada */
+  width: 160px; /* Defina a largura desejada */
+}
+
+@media screen and (max-width: 700px) {
+  /* Alterar a largura do container para ocupar a largura total */
+  #container {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+
+  /* Centralizar o texto no título */
+  #title {
+    text-align: center;
+  }
+
+  /* Ajustar o tamanho das imagens de tecnologias */
+  #technology-img {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+/* Para telas maiores que 700px (como tablets e desktops) */
+@media screen and (min-width: 700px) {
+  /* Restaurar a largura do container */
+  #container {
+    padding: 0 80px;
+  }
+
+  /* Ajustar o tamanho das imagens de tecnologias para a versão desktop */
+  #technology-img {
+    height: 150px;
+    width: 160px;
+  }
+}
+
+/* profile */
+
+#profile {
+  display: flex;
+  padding: 24px;
+  gap: 10px;
+  align-items: center;
+}
+
+#profile img {
+  width: 40px;
+}
+
+/* title */
+
+#title {
+  font-size: large;
+  text-align: center;
+  flex: 1;
+  margin-right: 250px;
+}
+
+/* links */
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  padding: 24px 0;
+}
+
+ul li {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  padding: 16px 24px;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  text-decoration: none;
+  font-weight: 500;
+
+  transition: background 0.2s;
+}
+
+/* pseudo-selector */
+
+ul li:hover {
+  background: var(--surface-color-hover);
+  border: 1.5px solid var(--text-color);
+}
+
+/* social-links */
+
+#social-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 24px 0;
+  font-size: 24px;
+}
+
+#social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+
+  transition: background 0.2s;
+  border-radius: 50%;
+}
+
+#social-links a:hover {
+  background: var(--highlight-color);
+}
+
+footer {
+  padding: 24px;
+  text-align: center;
+  font-size: 14px;
+  top: 20;
+}
+
+/* media queries */
+
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./../assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-url: url(./../assets/bg-desktop-light.jpg);
+  }
+}
+
+/* animation */
+
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
+}
