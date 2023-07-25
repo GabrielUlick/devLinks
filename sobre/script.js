@@ -1,21 +1,12 @@
-function toggleMode() {
+document.addEventListener("DOMContentLoaded", function () {
   const html = document.documentElement
-  /*
-  if(html.classList.contains('light')) {
-    html.classList.remove('light')
-  } else {
-    html.classList.add('light')
-  }
-  */
-  html.classList.toggle("light")
+  const modoSalvo = localStorage.getItem("modo")
 
-  const img = document.querySelector("#profile img")
+  if (modoSalvo === "light") {
+    html.classList.add("light") // Aplica a classe "light" se o modo claro estiver salvo
 
-  if (html.classList.contains("light")) {
-    img.setAttribute("src", "./../assets/avatar.png")
-    img.setAttribute("alt", "Foto de perfil Gabriel Ulick modo claro")
-  } else {
-    img.setAttribute("src", "./../assets/avatar.png")
-    img.setAttribute("alt", "Foto de perfil Gabriel Ulick modo escuro")
+    const img = document.querySelector("#back-button")
+    img.setAttribute("src", "./../assets/back-button-light.png")
+    img.setAttribute("alt", "back-button modo claro")
   }
-}
+})
