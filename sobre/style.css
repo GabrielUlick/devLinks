@@ -29,8 +29,6 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-  /*background: color image repeat position/size */
-  /* height: 100vh; */
 }
 
 body * {
@@ -82,22 +80,25 @@ header {
   width: 160px; /* Defina a largura desejada */
 }
 
+/* Para telas menores que 700px (como celulares) */
 @media screen and (max-width: 700px) {
-  /* Alterar a largura do container para ocupar a largura total */
+  /* Alterar a largura do container para ocupar a largura total e centralizar os elementos */
   #container {
     grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
     padding: 0 20px;
   }
 
-  /* Centralizar o texto no título */
+  /* Restaurar o texto do título para centralizar */
   #title {
     text-align: center;
+    margin-right: 0; /* Remova a margem do título para centralizá-lo */
   }
-
-  /* Ajustar o tamanho das imagens de tecnologias */
   #technology-img {
-    height: 100px;
-    width: 100px;
+    text-align: center;
+    height: 80px; /* Ajuste a altura para um valor menor */
+    width: 80px; /* Ajuste a largura para um valor menor */
   }
 }
 
@@ -106,10 +107,12 @@ header {
   /* Restaurar a largura do container */
   #container {
     padding: 0 80px;
+    justify-content: center;
   }
 
   /* Ajustar o tamanho das imagens de tecnologias para a versão desktop */
   #technology-img {
+    text-align: center;
     height: 150px;
     width: 160px;
   }
