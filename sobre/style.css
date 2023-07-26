@@ -68,17 +68,36 @@ header {
   grid-template-columns: 1fr 1fr;
   gap: 10px;
   width: 100%;
-  margin: auto auto;
-  padding: 0 80px;
+  justify-items: center;
+  align-items: center;
+  padding: 0 20px;
+  transition: 0.2s ease-in-out;
+  animation: flipImg 1.8s;
+}
+
+#technology-img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 #technology-img {
-  display: flex; /* Define o elemento como um flex container */
+  display: flex; 
   align-items: center;
-  justify-content: center; /* Centraliza o conteúdo verticalmente e horizontalmente */
-  height: 150px; /* Defina a altura desejada */
-  width: 160px; /* Defina a largura desejada */
+  justify-content: center; 
+  height: 100px; 
+  width: 110px; 
+  
 }
+
+@keyframes flipImg {
+    from {
+      transform: rotateX(90deg);
+    }
+    to {
+      transform: rotateX(0deg);
+    }
+  }
+
 
 /* Para telas menores que 700px (como celulares) */
 @media screen and (max-width: 700px) {
@@ -93,12 +112,12 @@ header {
   /* Restaurar o texto do título para centralizar */
   #title {
     text-align: center;
-    margin-right: 0; /* Remova a margem do título para centralizá-lo */
+    margin-right: 0; 
   }
   #technology-img {
     text-align: center;
-    height: 80px; /* Ajuste a altura para um valor menor */
-    width: 80px; /* Ajuste a largura para um valor menor */
+    height: 80px; 
+    width: 80px; 
   }
 }
 
@@ -166,6 +185,10 @@ ul li {
   font-weight: 500;
 
   transition: background 0.2s;
+}
+
+ul li a {
+  text-decoration: none;
 }
 
 /* pseudo-selector */
