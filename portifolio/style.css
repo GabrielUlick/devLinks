@@ -78,23 +78,25 @@ header {
 
 /* Para telas menores que 700px (como celulares) */
 @media screen and (max-width: 700px) {
-  /* Alterar a largura do container para ocupar a largura total e centralizar os elementos */
+  /* Alterar a largura do container para ocupar a largura desejada e centralizar os elementos */
   #container {
-    grid-template-columns: 1fr;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 0 20px;
+    margin-left: -68px;
   }
 
   /* Restaurar o texto do título para centralizar */
   #title {
     text-align: center;
-    margin-right: 0; /* Remova a margem do título para centralizá-lo */
+    margin-right: 0;
   }
-  #technology-img {
-    text-align: center;
-    height: 80px; /* Ajuste a altura para um valor menor */
-    width: 80px; /* Ajuste a largura para um valor menor */
+
+  /* Centralizar a imagem e manter suas dimensões */
+  #projects {
+    width: 300px; /* Largura fixa */
+    height: 200px; /* Altura fixa */
   }
 }
 
@@ -163,7 +165,6 @@ ul li {
 
   transition: background 0.2s;
 }
-
 
 ul li a {
   text-decoration: none;
