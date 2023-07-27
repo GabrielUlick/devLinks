@@ -127,6 +127,9 @@ header {
     justify-content: center;
     align-items: center;
   }
+  #content-left {
+    padding-left: 5%;
+  }
 
   #title {
     text-align: center;
