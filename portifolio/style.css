@@ -63,7 +63,7 @@ header {
   display: flex;
   width: 100%;
   margin: 0;
-  /* padding: 0 80px; Remova essa linha */
+  padding-left: 10%;
   padding-right: 10%;
 }
 
@@ -71,41 +71,32 @@ header {
   display: flex;
   width: 100%;
   margin: 0;
-  /* padding: 0 80px; Remova essa linha */
   padding-left: 10%;
   padding-right: 10%;
 }
 
 @media screen and (max-width: 1550px) {
-  #content-left {
-    padding-left: 10%;
-    justify-content: center;
-  }
-  #content-right {
-    justify-content: center;
-  }
   #projects {
-    width: 500px; /* Largura fixa */
-    height: 300px; /* Altura fixa */
+    width: 500px; 
+    height: 300px; 
   }
   #projects-mobile {
-    width: 500px; /* Largura fixa */
-    height: 700px; /* Altura fixa */
+    width: 500px; 
+    height: 700px; 
   }
 }
 @media screen and (max-width: 1166px) {
   #projects {
-    width: 350px; /* Largura fixa */
-    height: 200px; /* Altura fixa */
+    width: 350px; 
+    height: 200px; 
   }
   #projects-mobile {
-    width: 350px; /* Largura fixa */
-    height: 600px; /* Altura fixa */
+    width: 350px; 
+    height: 600px; 
   }
 }
-/* Para telas menores que 700px (como celulares) */
+
 @media screen and (max-width: 840px) {
-  /* Alterar a largura do container para ocupar a largura desejada e centralizar os elementos */
   #container {
     display: flex;
     flex-direction: column;
@@ -113,21 +104,19 @@ header {
     align-items: center;
   }
 
-  /* Restaurar o texto do título para centralizar */
   #title {
     text-align: center;
     margin-right: 0;
   }
 
-  /* Centralizar a imagem e manter suas dimensões */
   #projects {
-    width: 300px; /* Largura fixa */
-    height: 200px; /* Altura fixa */
+    width: 300px; 
+    height: 200px; 
   }
 
   #projects-mobile {
-    width: 300px; /* Largura fixa */
-    height: 550px; /* Altura fixa */
+    width: 300px; 
+    height: 550px; 
   }
 }
 
