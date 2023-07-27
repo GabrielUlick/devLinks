@@ -77,7 +77,6 @@ header {
 }
 
 @media screen and (max-width: 1550px) {
-
   #content-left {
     padding-left: 10%;
     justify-content: center;
@@ -88,6 +87,10 @@ header {
   #projects {
     width: 500px; /* Largura fixa */
     height: 300px; /* Altura fixa */
+  }
+  #projects-mobile {
+    width: 100px; /* Largura fixa */
+    height: 800px; /* Altura fixa */
   }
 }
 @media screen and (max-width: 1166px) {
@@ -173,6 +176,7 @@ ul li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   padding: 16px 24px;
   background: var(--surface-color);
   border: 1px solid var(--stroke-color);
