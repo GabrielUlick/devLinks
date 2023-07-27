@@ -89,8 +89,8 @@ header {
     height: 300px; /* Altura fixa */
   }
   #projects-mobile {
-    width: 100px; /* Largura fixa */
-    height: 800px; /* Altura fixa */
+    width: 500px; /* Largura fixa */
+    height: 700px; /* Altura fixa */
   }
 }
 @media screen and (max-width: 1166px) {
