@@ -57,8 +57,6 @@ header {
   grid-template-columns: 1fr 1fr;
   width: 100%;
   margin: 0;
-  padding-left: 10%;
-  padding-right: 10%;
 }
 
 #content-left {
@@ -77,8 +75,20 @@ header {
   padding: 0 20px; /* Ajuste o valor do padding conforme necessário */
 }
 
-
 @media screen and (max-width: 1550px) {
+  #container{
+    gap: 15px;
+  }
+  #content-left {
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: center;
+  }
+  #content-right {
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: center;
+  }
   #projects {
     width: 500px; /* Largura fixa */
     height: 300px; /* Altura fixa */
@@ -86,19 +96,18 @@ header {
 }
 @media screen and (max-width: 1166px) {
   #projects {
-    width: 300px; /* Largura fixa */
+    width: 350px; /* Largura fixa */
     height: 200px; /* Altura fixa */
   }
 }
 /* Para telas menores que 700px (como celulares) */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 840px) {
   /* Alterar a largura do container para ocupar a largura desejada e centralizar os elementos */
   #container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: -60px;
   }
 
   /* Restaurar o texto do título para centralizar */
