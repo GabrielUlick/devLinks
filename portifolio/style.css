@@ -98,6 +98,10 @@ header {
     width: 350px; /* Largura fixa */
     height: 200px; /* Altura fixa */
   }
+  #projects-mobile {
+    width: 350px; /* Largura fixa */
+    height: 600px; /* Altura fixa */
+  }
 }
 /* Para telas menores que 700px (como celulares) */
 @media screen and (max-width: 840px) {
@@ -120,21 +124,10 @@ header {
     width: 300px; /* Largura fixa */
     height: 200px; /* Altura fixa */
   }
-}
 
-/* Para telas maiores que 700px (como tablets e desktops) */
-@media screen and (min-width: 700px) {
-  /* Restaurar a largura do container */
-  #container {
-    padding: 0 80px;
-    justify-content: center;
-  }
-
-  /* Ajustar o tamanho das imagens de tecnologias para a versão desktop */
-  #technology-img {
-    text-align: center;
-    height: 150px;
-    width: 160px;
+  #projects-mobile {
+    width: 300px; /* Largura fixa */
+    height: 550px; /* Altura fixa */
   }
 }
 
