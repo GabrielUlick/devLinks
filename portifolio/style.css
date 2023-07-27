@@ -77,11 +77,19 @@ header {
   padding: 0 20px; /* Ajuste o valor do padding conforme necessário */
 }
 
-#projects {
+
+@media screen and (max-width: 1550px) {
+  #projects {
     width: 500px; /* Largura fixa */
     height: 300px; /* Altura fixa */
   }
-
+}
+@media screen and (max-width: 1166px) {
+  #projects {
+    width: 300px; /* Largura fixa */
+    height: 200px; /* Altura fixa */
+  }
+}
 /* Para telas menores que 700px (como celulares) */
 @media screen and (max-width: 700px) {
   /* Alterar a largura do container para ocupar a largura desejada e centralizar os elementos */
