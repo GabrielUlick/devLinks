@@ -100,7 +100,7 @@ header {
 
 
 /* Para telas menores que 700px (como celulares) */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1120px) {
   /* Alterar a largura do container para ocupar a largura total e centralizar os elementos */
   #container {
     grid-template-columns: 1fr;
