@@ -130,6 +130,9 @@ header {
   #content-left {
     padding-left: 5%;
   }
+  #content-right {
+    margin-left: -10%;
+  }
 
   #title {
     text-align: center;
