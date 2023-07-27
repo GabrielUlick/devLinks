@@ -55,8 +55,8 @@ header {
 #container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 100%;
-  margin: 0;
+  gap: 15px;
+  justify-content: center;
 }
 
 #content-left {
@@ -64,7 +64,7 @@ header {
   width: 100%;
   margin: 0;
   /* padding: 0 80px; Remova essa linha */
-  padding: 0 20px; /* Ajuste o valor do padding conforme necessário */
+  padding-right: 10%;
 }
 
 #content-right {
@@ -72,21 +72,17 @@ header {
   width: 100%;
   margin: 0;
   /* padding: 0 80px; Remova essa linha */
-  padding: 0 20px; /* Ajuste o valor do padding conforme necessário */
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 @media screen and (max-width: 1550px) {
-  #container{
-    gap: 15px;
-  }
+
   #content-left {
     padding-left: 10%;
-    padding-right: 10%;
     justify-content: center;
   }
   #content-right {
-    padding-left: 10%;
-    padding-right: 10%;
     justify-content: center;
   }
   #projects {
