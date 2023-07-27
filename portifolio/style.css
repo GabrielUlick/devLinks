@@ -75,24 +75,48 @@ header {
   padding-right: 10%;
 }
 
+#description {
+  text-align: justify;
+}
+
+#tecnology {
+  display: flex;
+  gap: 3px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+#technology-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 90px;
+}
+
+#technology-img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1550px) {
   #projects {
-    width: 500px; 
-    height: 300px; 
+    width: 500px;
+    height: 300px;
   }
   #projects-mobile {
-    width: 500px; 
-    height: 700px; 
+    width: 500px;
+    height: 700px;
   }
 }
 @media screen and (max-width: 1166px) {
   #projects {
-    width: 350px; 
-    height: 200px; 
+    width: 350px;
+    height: 200px;
   }
   #projects-mobile {
-    width: 350px; 
-    height: 600px; 
+    width: 350px;
+    height: 600px;
   }
 }
 
@@ -110,13 +134,20 @@ header {
   }
 
   #projects {
-    width: 300px; 
-    height: 200px; 
+    width: 300px;
+    height: 200px;
   }
 
   #projects-mobile {
-    width: 300px; 
-    height: 550px; 
+    width: 300px;
+    height: 550px;
+  }
+
+  #technology-img {
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 40px;
   }
 }
 

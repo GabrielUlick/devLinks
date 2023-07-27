@@ -75,18 +75,17 @@ header {
   animation: flipImg 1.8s;
 }
 
-#technology-img:hover {
-    transform: scale(1.05);
-    cursor: pointer;
-}
-
 #technology-img {
   display: flex; 
   align-items: center;
   justify-content: center; 
   height: 100px; 
   width: 110px; 
-  
+}
+
+#technology-img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 @keyframes flipImg {
