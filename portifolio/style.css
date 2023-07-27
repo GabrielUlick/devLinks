@@ -57,24 +57,30 @@ header {
   grid-template-columns: 1fr 1fr;
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 #content-left {
   display: flex;
   width: 100%;
   margin: 0;
-  padding: 0 80px;
+  /* padding: 0 80px; Remova essa linha */
+  padding: 0 20px; /* Ajuste o valor do padding conforme necessário */
 }
-
-/* right-content */
 
 #content-right {
   display: flex;
   width: 100%;
   margin: 0;
-  padding: 0 80px;
+  /* padding: 0 80px; Remova essa linha */
+  padding: 0 20px; /* Ajuste o valor do padding conforme necessário */
 }
+
+#projects {
+    width: 500px; /* Largura fixa */
+    height: 300px; /* Altura fixa */
+  }
 
 /* Para telas menores que 700px (como celulares) */
 @media screen and (max-width: 700px) {
@@ -205,6 +211,7 @@ footer {
   padding: 24px;
   text-align: center;
   font-size: 14px;
+  top: 20;
 }
 
 /* media queries */
