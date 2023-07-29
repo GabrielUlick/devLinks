@@ -55,24 +55,24 @@ header {
 #container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 15px;
-  justify-content: center;
+  gap: 0px;
+  /* justify-content: center; */
 }
 
 #content-left {
   display: flex;
   width: 100%;
   margin: 0;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 5%;
+  padding-right: 1%;
 }
 
 #content-right {
   display: flex;
   width: 100%;
   margin: 0;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 1%;
+  padding-right: 5%;
 }
 
 #description {
@@ -128,11 +128,11 @@ header {
     align-items: center;
   }
   #content-left {
-    padding-left: 5%;
+    padding-right: 20%;
   }
-  #content-right {
+  /* #content-right {
     margin-left: -10%;
-  }
+  } */
 
   #title {
     text-align: center;
