@@ -127,11 +127,11 @@ header {
     justify-content: center;
     align-items: center;
   }
-  /* #content-left {
-    padding-right: 20%;
-  } */
+  #content-left {
+    margin-right: 4%;
+  }
   #content-right {
-    margin-left: 7%;
+    margin-left: 4%;
   }
 
   #title {
