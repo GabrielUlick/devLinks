@@ -99,16 +99,17 @@ header {
   cursor: pointer;
 }
 
-@media screen and (max-width: 1550px) {
   #projects {
     width: 500px;
     height: 300px;
   }
+  
   #projects-mobile {
     width: 380px;
     height: 700px;
   }
-}
+
+
 @media screen and (max-width: 1166px) {
   #projects {
     width: 350px;
